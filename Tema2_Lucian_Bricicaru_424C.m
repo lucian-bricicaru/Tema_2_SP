@@ -8,7 +8,7 @@
 P = 40; %Perioada semnalului
 f = 1/P;
 %alegem rezolutia temporala adecvata si ulterior sa mai afisam o perioada la dreapta si alta la stanga
-t = -1.5 * P:0.1:1.5 * P;
+t = -2 * P:0.1:2 * P;
 %atribuim pulsul semnalului in functie de ordine
 D = 5;
 %calculam factorul de umplere cu formula : duty = D / P * 100;
