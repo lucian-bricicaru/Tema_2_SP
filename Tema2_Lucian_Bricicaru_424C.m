@@ -48,5 +48,7 @@ Ak(26) = abs(CC);
 Ak(1) = Ak(51);   
 %afisam spectrul de valori                 
 stem([0:N],Ak); 
+hold on;
+plot([0:N],Ak, "-o");
 title('Spectrul de amplitudini');
 grid;
