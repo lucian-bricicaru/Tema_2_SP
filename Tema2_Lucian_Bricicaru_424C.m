@@ -39,9 +39,14 @@ x_modificat = 0;
 figure(1);
 %afisam semnalul creat din suma de sinusuri peste semnalul original
 plot(t, x_modificat, t, X);
+title('x(t) si reconstructia');
+ylabel('Amplitudinea [V]');
+xlabel('Timp [s]');
 figure(2)
 %facem simetria amplitudinilor Ak pentru spectru
 Ak(26) = abs(CC);
 Ak(1) = Ak(51);   
 %afisam spectrul de valori                 
 stem([0:N],Ak); 
+title('Spectrul de amplitudini');
+grid;
